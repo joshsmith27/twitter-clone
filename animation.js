@@ -38,7 +38,7 @@ $(document).ready(function() {
     // var userName = $(".username").html();
     var displayName =$(".disPlayName").html();
     $("#stream").prepend(
-      '<div class="tweet">' +
+      '<div class="tweet" onClick="toggleStats(this)">' +
       '<div class="content">' +
       '<img class="avatar" src=' + "\"" + profileImage + "\"" + '/>' +
       '<strong class="fullname">' + displayName + '</strong>' +
@@ -78,14 +78,14 @@ $(document).ready(function() {
       );
       $(".tweet-compose1").val('');
       $(".stats").hide();
-      $(".tweet").click(function(){
-        $(".stats", this).toggle();
-      });
+      // $(".tweet").click(function(){
+      //   $(".stats", this).toggle();
+      // });
   });
-  $(".tweet").click(function(){
-    $(".stats", this).toggle();
-  });
+  // $(".tweet").click(function(){
+  //   $(".stats", this).toggle();
+  // });
 });
-// function toggleStats(element){
-//   $(element).$("stats").toggle();
-// }
+function toggleStats(element){
+  $(element).find(".stats").toggle();
+}
