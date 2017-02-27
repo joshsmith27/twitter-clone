@@ -1,0 +1,22 @@
+{
+  "name": "twitter-clone",
+  "version": "1.0.0",
+  "description": "A demostration of basic jquery concepts",
+  "main": "animation.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshuasmith9/twitter-clone.git"
+  },
+  "author": "Joshua Smith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joshuasmith9/twitter-clone/issues"
+  },
+  "homepage": "https://github.com/joshuasmith9/twitter-clone#readme",
+  "dependencies": {
+    "express": "^4.14.1"
+  }
+}
